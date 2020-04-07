@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d07b9b9b-d38d-45de-951c-e236c51b3b67" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1a4HJ34dVAjhSskLOj04u7dgsCt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Flask1" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="flask_bootstrap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d07b9b9b-d38d-45de-951c-e236c51b3b67" name="Default Changelist" comment="" />
+      <created>1585987870234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585987870234</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="246" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586257013261">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state x="424" y="246" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1123@0.23.1920.1123" timestamp="1586257013261" />
+    <state x="675" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586076812800">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="675" y="410" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1586076812800" />
+    <state width="1899" height="311" key="GridCell.Tab.0.bottom" timestamp="1586265639250">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state width="1899" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1586198943638" />
+    <state width="1899" height="311" key="GridCell.Tab.0.bottom/0.23.1920.1123@0.23.1920.1123" timestamp="1586265639250" />
+    <state width="1899" height="311" key="GridCell.Tab.0.center" timestamp="1586265639249">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state width="1899" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1586198943636" />
+    <state width="1899" height="311" key="GridCell.Tab.0.center/0.23.1920.1123@0.23.1920.1123" timestamp="1586265639249" />
+    <state width="1899" height="311" key="GridCell.Tab.0.left" timestamp="1586265639248">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state width="1899" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1586198943636" />
+    <state width="1899" height="311" key="GridCell.Tab.0.left/0.23.1920.1123@0.23.1920.1123" timestamp="1586265639248" />
+    <state width="1899" height="311" key="GridCell.Tab.0.right" timestamp="1586265639249">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state width="1899" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1586198943637" />
+    <state width="1899" height="311" key="GridCell.Tab.0.right/0.23.1920.1123@0.23.1920.1123" timestamp="1586265639249" />
+    <state x="461" y="223" key="SettingsEditor" timestamp="1586248829026">
+      <screen x="0" y="23" width="1920" height="1123" />
+    </state>
+    <state x="461" y="223" key="SettingsEditor/0.23.1920.1123@0.23.1920.1123" timestamp="1586248829026" />
+  </component>
+</project>
