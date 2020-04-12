@@ -1,0 +1,18 @@
+{
+  "para": {
+      "blog_name": "The Tech-Know Zone",
+      "blog_tag_line": "A Blog for your Tech- appetite",
+      "fb_url": "https://facebook.com/the_tech_know_zone",
+      "tw_url": "https://twitter.com/the_tech_know_zone",
+      "gh_url": "https://github.com/the_tech_know_zone",
+      "dev" : {
+        "database_name": "the_tech_know_zone",
+        "database_user": "root",
+        "database_password": "root",
+        "database_host": "localhost"
+      },
+      "gmail_sender": "xxx@gmail.com",
+      "gmail_receiver": ["yyy@gmail.com","xzzzz@gmail.com"],
+      "gmail_password": "1qaz1qaz"
+    }
+}
