@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static',filename='img/about-bg.jpg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Publish Your Post!</h1>
+            <span class="subheading"> Let the world hear you out!!! .</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>  Fill out the space below to share the next big tech buzz you're aware of !! </p>
+
+          <form name="sentMessage" id="sample post form"  action="/sample_post" method="post" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Title Of Post</label>
+              <input type="text" name="title" class="form-control" placeholder="Title of Post" id="title" required data-validation-required-message="Please enter title of your post.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Sub Heading </label>
+              <input type="text" name="subheading" class="form-control" placeholder="Sub-heading for post" id="subheading" required data-validation-required-message="Please enter sub heading for your post.">
+              <p class="help-block text-danger"></p>
+            </div>
+
+           <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Content of Post</label>
+              <textarea rows="6" class="form-control" placeholder="Body/content of Post" name="content" id="content" required data-validation-required-message="Please enter the content/body of your post."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Phone Number</label>
+              <input type="tel" class="form-control" placeholder="Phone Number" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          </div>
+          <br>
+          <div id="success"></div>
+          <div class="form-group">
+            <button type="Publish" class="btn btn-primary" id="PublishPostButton">Publish</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ {% endblock %}

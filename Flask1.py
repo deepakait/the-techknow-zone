@@ -3,6 +3,7 @@ import pymysql.cursors
 import json
 from datetime import datetime
 from flask_mail import Mail
+import uuid
 
 para = {}
 with open('config.json','r') as c:
@@ -22,13 +23,16 @@ app.config.update(
     MAIL_USE_SSL=True,
     MAIL_USERNAME=para['gmail_sender'],
     MAIL_PASSWORD=para['gmail_password']
-                )
+)
+
 mail = Mail(app)
 
 
 @app.route("/")
 def home():
+
     return render_template('index.html', para=para)
+
 
 
 @app.route("/about")
@@ -80,15 +84,62 @@ def index():
 
 @app.route("/index")
 def ind():
-    return render_template('index.html', para=para)
+    cursor = db.cursor()
+    sql = "SELECT title, content, date, image_file from posts"
+    cursor.execute(sql)
+    post = cursor.fetchmany(10)
+    blog_posts = []
+
+    for row in post:
+        post1 = {
+            'date': row[2],
+            'content': row[1],
+            'title': row[0],
+            'image_file': row[3]
+        }
+        blog_posts.append(post1)
+
+    return render_template('index.html', para=para, blog_posts=blog_posts)
 
 
-@app.route("/post/<string:post_slug>", methods = ['GET'])
+@app.route("/post/<string:post_slug>", methods=['GET'])
 def post_route(post_slug):
+    cursor = db.cursor()
+    sql = "SELECT title, content, date, image_file from posts where slug=%s"
+    cursor.execute(sql, (post_slug))
+    post = cursor.fetchone()
+    post1 = {
+        'date': post[2],
+        'content': post[1],
+        'title': post[0],
+        'image_file': post[3]
+    }
 
-    post = posts.query.filter_by(slug=post_slug).first()
+    print(post1)
+    return render_template('post.html', para=para, post=post1)
 
-    return render_template('post.html', para=para, post = posts)
+
+@app.route("/sample_post",methods=['GET', 'POST'])
+def sample_post():
+
+    if (request.method == 'POST'):
+        ''' Add published Post entry to the database'''
+        title = request.form.get('title')
+        content = request.form.get('content')
+        phone = request.form.get('phone')
+        subheading = request.form.get('subheading')
+
+        '''
+            Sno , title ,subheading, slug , content , date , phone
+        '''
+
+        cursor = db.cursor()
+        sql = "INSERT INTO posts (title, content , phone , slug, subheading, date) VALUES (%s, %s, %s, %s, %s, %s)"
+        print("========================")
+        random = str(uuid.uuid1())
+        print(cursor.execute(sql, (title, content, phone, title + random, subheading, datetime.now())))
+        db.commit()
+    return render_template('sample post.html', para=para)
 
 
 app.run(debug=True)

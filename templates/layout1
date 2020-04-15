@@ -13,44 +13,25 @@
   <!-- Bootstrap core CSS -->
   <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ url_for('static',filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+  <!-- Custom styles for this template -->
   <link href="{{ url_for('static',filename='css/clean-blog.min.css') }}" rel="stylesheet">
 
 </head>
-<style>
-  .mystyle{
-    background:#333;
-    color:#fff!important;
 
-  }
-  .btn-css{
-    border: 1px solid #333;
-    background: #333;
-    color: #fff;
-transition:.3s;
-  }
-  .btn-css:hover{
-    background:#fff;
-    color:#333!important;
-    transition:1s;
-  }
-  .change-color{
-  color:#fff;
-  }
-  .cursor{
-  cursor:pointer;
-  }
-</style>
-<body id="body-background">
+<body>
 
   <!-- Navigation -->
+    <div class="switch">Dark mode:
+        <button class="btn inner-switch">OFF</button>
+    </div>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-
       <a class="navbar-brand" href="index"> {{para['blog_name']}} Recent</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -65,13 +46,10 @@ transition:.3s;
             <a class="nav-link" href="about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sample_post">Sample Post</a>
+            <a class="nav-link" href="post">Sample Post</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link cursor btn-css" onclick="myFunction()">Switch Mode</a>
           </li>
         </ul>
       </div>
@@ -114,7 +92,7 @@ transition:.3s;
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted" id="body-color">Copyright &copy; {{para['blog_name']}}  2020</p>
+          <p class="copyright text-muted">Copyright &copy; {{para['blog_name']}}  2020</p>
         </div>
       </div>
     </div>
@@ -131,10 +109,10 @@ transition:.3s;
 
 <script>
 function myFunction() {
-   var element = document.getElementById("body-background");
-   var ele = document.getElementById("body-color");
+   var element = document.getElementById("myDIV");
    element.classList.toggle("mystyle");
-   ele.classList.toggle("btn-style");
 }
 </script>
+
+
 </html>

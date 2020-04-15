@@ -20,24 +20,26 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-
-
         <!-- To do : Fetch it using For loop from database -->
-
+      {% for blog_post in blog_posts %}
         <div class="post-preview">
-          <a href="post.html">
+          <a href="/post/{{blog_post.slug}}">
             <h2 class="post-title">
-              Failure is not an option
+              {{blog_post.title}}
             </h2>
             <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+              {{blog_post.subtitle}}
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
+            <a href="#">Admin</a>
+            on {{blog_post.date}}</p>
         </div>
+        {{blog_post.content[0:53]}}...
         <hr>
+
+      {% endfor %}
+
         <!-- Pager -->
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
